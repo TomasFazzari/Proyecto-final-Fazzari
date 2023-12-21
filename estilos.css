@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Raleway:ital,wght@0,400;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Lobster&family=Raleway:ital,wght@0,400;1,300;1,400&display=swap");
+/*
+font-family: 'Fira Sans',
+sans-serif;
+font-family: 'Raleway',
+sans-serif;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*inicio index*/
+/*header*/
+nav {
+  background-color: rgb(163, 46, 46);
+}
+
+.navbar-dark .navbar-brand {
+  color: black;
+  font-size: 40px;
+  font-family: "Lobster", sans-serif;
+}
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+}
+
+/*header*/
+/*main*/
+#info {
+  background-image: url(/imagenes/granosdecafefondo.jpg);
+  background-size: cover;
+  height: auto;
+}
+
+.cafe {
+  color: rgba(255, 255, 255, 0.934);
+  padding: 150px;
+  font-size: 30px;
+  font-family: "Raleway";
+}
+
+/*main*/
+/*section*/
+.tiposcafe {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Fira Sans";
+  padding: 30px;
+  margin-top: 30px;
+}
+
+section {
+  height: auto;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/*Cartas de cafe*/
+.card {
+  height: 480px;
+  width: 350px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Raleway";
+  border: 3px solid brown;
+  margin: 20px;
+}
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card-img1 {
+  background-image: url(./imagenes/cafebarista.jpg);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-img2 {
+  background-image: url(./imagenes/cafesceglieri.jpg);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-img3 {
+  background-image: url(./imagenes/cafecolombiano.jpg);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-img4 {
+  background-image: url(./imagenes/cafedescafeinado.jpg);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-title {
+  color: brown;
+  margin: 15px;
+  font-size: 25px;
+}
+
+.card-desc {
+  padding: 10px;
+}
+
+/*cartas de cafe*/
+/*section*/
+/*2do main*/
+#info2 {
+  background-image: url(/imagenes/tostadofondo.jpg);
+  background-size: cover;
+  height: 500px;
+  margin-top: 70px;
+}
+
+.menu {
+  color: black;
+  text-align: right;
+  padding: 150px;
+  margin-left: 700px;
+  font-size: 25px;
+  font-family: "Raleway";
+  width: 50%;
+}
+
+/*2do main*/
+/*2do section*/
+#tostados {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.tiposdetostados {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Fira Sans";
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.img {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+  margin: 20px;
+}
+
+.pan1 {
+  background-image: url(./imagenes/rubio.jpg);
+}
+
+.pan2 {
+  background-image: url(./imagenes/medio.jpg);
+}
+
+.pan3 {
+  background-image: url(./imagenes/oscuro.jpg);
+}
+
+.pan {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Raleway";
+}
+
+article h4 {
+  padding: 20px;
+  color: brown;
+  font-size: 30px;
+  font-family: "Raleway";
+}
+
+/*2do section*/
+/*Footer*/
+.text {
+  color: black;
+  font-size: 25px;
+  font-family: "Lobster", sans-serif;
+}
+
+.page-footer {
+  background-color: rgb(163, 46, 46);
+  font-size: 15px;
+  color: black;
+}
+
+ul li a {
+  color: rgba(0, 0, 0, 0.725);
+}
+
+/*footer*/
+/*fin index*/
+/*inicio pagina nuestro menu*/
+.jumbotron {
+  background-image: url(./imagenes/tostfrancesa.jpg);
+  background-size: cover;
+  height: 300px;
+}
+
+div h1 {
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+  margin: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menucomida {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 300px);
+  grid-template-areas: "menu1 menu2" "menu3 menu2" "menu3 menu5" "menu3 menu5";
+  padding: 100px;
+  grid-gap: 35px;
+}
+
+.item {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.item1 {
+  grid-area: menu1;
+  background-image: url(./imagenes/menu1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.item2 {
+  grid-area: menu2;
+  background-image: url(./imagenes/menu2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.item3 {
+  grid-area: menu3;
+  background-image: url(./imagenes/menu3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.item4 {
+  grid-area: menu2;
+  background-image: url(./imagenes/menu4.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.item5 {
+  grid-area: menu5;
+  background-image: url(./imagenes/menu5.png);
+  background-size: cover;
+}
+
+.opciones {
+  text-align: center;
+}
+
+.imagenopciones {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.imagenopciones img {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.imagenopciones:hover img {
+  transform: scale(1.5);
+}
+
+div h4 {
+  font-size: 35px;
+  font-family: "Raleway";
+}
+div img {
+  width: 100%;
+  padding: 30px;
+}
+
+/*fin pagina nuestro menu*/
+/*inicio pagina contacto*/
+.comunicate {
+  text-align: center;
+  margin: 20px;
+}
+
+.contacto {
+  margin: 30px;
+}
+
+.redes {
+  font-size: 40px;
+  padding: 30px;
+}
+
+.redes a i {
+  color: rgba(0, 0, 0, 0.679);
+}
+
+div a {
+  margin: 25px;
+}
+
+/*fin pagina contacto*/
+/*inicio pagina locales*/
+.local {
+  display: flex;
+  margin-top: 20px;
+}
+
+.descubre {
+  width: 50%;
+  padding: 30px;
+}
+
+.descubre h4 {
+  font-family: "Lobster";
+  color: rgba(196, 48, 48, 0.71);
+}
+
+.mapa {
+  margin-top: 60px;
+  margin-left: 50px;
+  width: 40%;
+}
+
+div h4 {
+  font-family: "Raleway";
+  font-size: 30px;
+  color: rgba(161, 2, 2, 0.547);
+}
+div p {
+  font-family: "Fira Sans";
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .local {
+    display: inline-block;
+  }
+  .descubre {
+    width: auto;
+  }
+  .mapa {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+}
+/*fin pagina locales*/
+/*inicio pagina nuestro cafe*/
+.productos {
+  margin-left: 55px;
+  margin-bottom: 40px;
+}
+
+.item-product {
+  text-align: center;
+  font-size: 15px;
+  margin: 30px;
+  border-radius: 10px;
+}
+.item-product:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-producto {
+  padding: 15px;
+}
+
+.item-product figure {
+  overflow: hidden;
+}
+.item-product img {
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.item-product:hover img {
+  transform: scale(1.2);
+}
+
+.info-producto button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.productos-text {
+  text-align: center;
+  margin: 20px;
+  font-size: 15px;
+}
+.productos-text h5 {
+  font-size: 50px;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 420px) {
+  .productos-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .item-product {
+    width: 400px;
+  }
+  .item-product figure {
+    overflow: hidden;
+  }
+  .produ-text {
+    margin: 20px;
+  }
+}
+/*fin pagina nuestro cafe*//*# sourceMappingURL=estilos.css.map */
